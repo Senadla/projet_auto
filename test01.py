@@ -1,5 +1,6 @@
 import unittest
 
+
 class CalculatorTests(unittest.TestCase):
     def test_addition(self):
         result = 2 + 3
