@@ -1,0 +1,15 @@
+name: Calculatrice
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Vérification du dépôt
+      uses: actions/checkout@v2
+
+    - name: Exécution de la calculatrice
+      run: |
+        echo "2 + 2" | bc
